@@ -148,6 +148,45 @@
           </article>
         </div>
       </section>
+
+      <section>
+        <h1>Contact Me</h1>
+        <form>
+          <label for="name">Full Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="John Smith"
+          />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="email@example.com"
+          />
+          <label for="subject">Subject:</label>
+          <select id="subject" name="subject" required>
+            <option value="" selected disabled class="title">
+              Select a reason for contacting
+            </option>
+            <option value="job-opportunity">Job Opportunity</option>
+            <option value="collaboration">Project Collaboration</option>
+            <option value="hire-me">Hire Me</option>
+            <option value="technical">Technical Question</option>
+            <option value="bug-report">Bug Report</option>
+            <option value="other">Other</option>
+          </select>
+          <label for="message">Your Message:</label>
+          <textarea type="textarea" id="message" name="message" required>
+Let me know what you think!</textarea
+          >
+          <button type="submit">Submit</button>
+        </form>
+      </section>
     </main>
     <footer>
       <p>&copy; 2026 Fatemeh Khoshbayan</p>

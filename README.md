@@ -1,6 +1,6 @@
 # Responsive Web Components
 
-A responsive personal portfolio webpage built with semantic HTML and modern CSS. It includes an About section, a projects grid, and social links to Medium, GitHub, LinkedIn, and email.
+A responsive personal portfolio webpage built with semantic HTML and modern CSS. It includes an About section, a projects grid, contact me form, and social links to Medium, GitHub, LinkedIn, and email.
 
 ## Live Demo
 
@@ -14,6 +14,7 @@ A responsive personal portfolio webpage built with semantic HTML and modern CSS.
 - About section with profile image and biography content
 - Projects section with card-style layout and category badges
 - Accessible social icons with descriptive `alt` text
+- Contact Me form with different subject options
 
 ## Tech Stack
 
@@ -45,6 +46,12 @@ You can also run a simple local static server if you prefer.
 
 - Some project card images in `index.html` currently use placeholder screenshot URLs.
 - The footer copyright is set to `2026`.
+
+## Screenshots
+
+![Home page screenshots](media/screenshot-1.png)
+![Home page screenshots](media/screenshot-2.png)
+![Home page screenshots](media/screenshot-3.png)
 
 ## License
 
