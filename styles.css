@@ -1,11 +1,15 @@
-/*  Reset CSS */
+/**
+ * Stylesheet for the responsive personal site layout.
+ */
+
+/* Reset CSS */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
   background-color: #faf9f6;
   min-height: 100vh;
   display: flex;
@@ -15,25 +19,32 @@ body {
 
 main {
   flex: 1;
-  width: 70%;
+  width: 100%;
+  max-width: 72rem;
+  padding: 2 1rem;
   display: flex;
   margin: 0 auto;
   font-size: large;
 }
 
+/* Sticky header and footer */
 header,
 footer {
   position: sticky;
   display: flex;
   justify-content: space-around;
-  background-color: #1a1a1d;
+  align-items: center;
+  background-color: #1A2227;
   color: #f1e9da;
   width: 100%;
 }
 
 header {
   top: 0;
-  padding: 2rem 0;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  text-align: center;
 }
 
 footer {
@@ -42,20 +53,60 @@ footer {
 }
 
 nav {
-  justify-items: center;
-  align-items: center;
   display: flex;
+  align-items: center;
 }
 
-header a, footer a {
+/* Icon links: touch-friendly hit area and hover outline */
+header a {
   color: inherit;
+  padding: 0.5rem;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+}
+
+header a:hover {
+  border: 1px solid #f1e9da;
 }
 
 ul {
   list-style-type: none;
-  gap: 40px;
-  justify-items: center;
+  gap: 0.5rem;
+  justify-content: center;
   align-items: center;
   display: flex;
-  padding: 0;
+  flex-wrap: wrap;
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    text-align: left;
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+  ul {
+    gap: 1.5rem;
+  }
+}
+
+/* Laptop and up */
+@media (min-width: 1024px) {
+  ul {
+    gap: 3rem;
+  }
 }
