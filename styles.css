@@ -1,0 +1,61 @@
+/*  Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #faf9f6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #2d2d2d;
+}
+
+main {
+  flex: 1;
+  width: 70%;
+  display: flex;
+  margin: 0 auto;
+  font-size: large;
+}
+
+header,
+footer {
+  position: sticky;
+  display: flex;
+  justify-content: space-around;
+  background-color: #1a1a1d;
+  color: #f1e9da;
+  width: 100%;
+}
+
+header {
+  top: 0;
+  padding: 2rem 0;
+}
+
+footer {
+  bottom: 0;
+  padding: 1rem 0;
+}
+
+nav {
+  justify-items: center;
+  align-items: center;
+  display: flex;
+}
+
+header a, footer a {
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  gap: 40px;
+  justify-items: center;
+  align-items: center;
+  display: flex;
+  padding: 0;
+}
