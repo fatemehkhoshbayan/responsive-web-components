@@ -23,6 +23,7 @@ main {
   max-width: 72rem;
   padding: 2 1rem;
   display: flex;
+  flex-direction: column;
   margin: 0 auto;
   font-size: large;
 }
@@ -34,7 +35,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #1A2227;
+  background-color: #1a2227;
   color: #f1e9da;
   width: 100%;
 }
@@ -45,11 +46,13 @@ header {
   gap: 1rem;
   padding: 2rem 1rem;
   text-align: center;
+  z-index: 10;
 }
 
 footer {
   bottom: 0;
   padding: 1rem 0;
+  z-index: 10;
 }
 
 nav {
@@ -86,6 +89,86 @@ header img {
   height: auto;
 }
 
+section {
+  padding: 2rem 0;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.projects {
+  display: inline-grid;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+article {
+  display: grid;
+  gap: 1.5rem;
+  border: 1px solid #a8a8a8;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+article:hover {
+  border: 2px solid #1a2227;
+}
+
+button {
+  background-color: #1a2227;
+  border: 1px solid #1a2227;
+  color: #f1e9da;
+  padding: 1rem 2.5rem;
+  border-radius: 0.5rem;
+  width: fit-content;
+  font-size: medium;
+}
+
+button:hover {
+  background-color: #a8a8a8;
+  color: #1a2227;
+}
+
+.project-image{
+  position: relative;
+}
+
+.project-image img{
+  border-radius: 3px;
+}
+
+.category-badge {
+  background-color: #f1e9da;
+  color: #1a2227;
+  padding: 0.5rem 1.5rem;
+  width: fit-content;
+  font-size: small;
+  justify-self: end; 
+  align-self: end;
+  position: absolute;
+  top: 0; 
+  z-index: 5;
+  margin: 0.5rem 0;
+  border-radius: 3px 0 0 3px;
+}
+
 /* Tablet */
 @media (min-width: 768px) {
   header {
@@ -102,11 +185,68 @@ header img {
   ul {
     gap: 1.5rem;
   }
+
+  article {
+    gap: 3rem;
+    padding: 2.5rem;
+  }
+
+  .category-badge{
+    font-size: medium;
+    padding: 0.5rem 3rem;
+  }
 }
 
 /* Laptop and up */
 @media (min-width: 1024px) {
   ul {
     gap: 3rem;
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+
+  .projects {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  article {
+    gap: 2rem;
+  }
+}
+
+/* Monitors */
+@media (min-width: 2000px) {
+  main {
+    max-width: 100rem;
+    margin: 1rem auto;
+  }
+
+  .about-me {
+    gap: 6rem;
+  }
+
+  button {
+    font-size: larger;
+  }
+
+  .projects {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6rem;
+  }
+
+  article {
+    gap: 3rem;
+    padding: 2.5rem;
+  }
+
+  .category-badge{
+    font-size: medium;
+    padding: 0.5rem 2rem;
   }
 }

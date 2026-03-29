@@ -1,51 +1,50 @@
 # Responsive Web Components
 
-A minimal **responsive** personal landing page built with semantic HTML5 and CSS. The layout uses a sticky header and footer, optional main content area, and icon links to Medium, GitHub, LinkedIn, and email.
+A responsive personal portfolio webpage built with semantic HTML and modern CSS. It includes an About section, a projects grid, and social links to Medium, GitHub, LinkedIn, and email.
 
----
+## Live Demo
+
+[https://fatemehkhoshbayan.github.io/responsive-web-components/](https://fatemehkhoshbayan.github.io/responsive-web-components/)
 
 ## Features
 
-- **Semantic HTML5** — `header`, `nav`, `main`, and `footer` for a clear document outline.
-- **Responsive layout** — viewport meta tag; header switches from a stacked (mobile) to row layout from 768px up.
-- **Sticky chrome** — header sticks to the top and footer to the bottom on tall viewports; `main` grows with `flex: 1`.
-- **Accessible nav** — social icons use descriptive `alt` text; links have hover states and comfortable touch targets.
-- **CSS baseline** — global reset with `box-sizing: border-box` for predictable sizing.
+- Semantic page structure using `header`, `nav`, `main`, `section`, `article`, and `footer`
+- Responsive design with breakpoints for tablet, laptop, and wide-monitor layouts
+- Sticky header and footer with a flexible main content area
+- About section with profile image and biography content
+- Projects section with card-style layout and category badges
+- Accessible social icons with descriptive `alt` text
 
----
+## Tech Stack
 
-## Tech stack
+| Area | Choice |
+| --- | --- |
+| Markup | HTML5 |
+| Styling | CSS3 |
+| JavaScript | None |
 
-| Area       | Choice |
-| ---------- | ------ |
-| Markup     | HTML5  |
-| Styles     | CSS3   |
-| JavaScript | None   |
+## Project Structure
 
----
+| Path | Purpose |
+| --- | --- |
+| `index.html` | Main portfolio page markup |
+| `styles.css` | Global styles, layout, and responsive breakpoints |
+| `media/` | Local image assets (social icons and profile image) |
 
-## Project structure
+## Getting Started
 
-| Path           | Purpose                                      |
-| -------------- | -------------------------------------------- |
-| `index.html`   | Page markup and social links                |
-| `styles.css`   | Layout, colors, and responsive breakpoints  |
-| `media/`       | PNG icons for Medium, GitHub, LinkedIn, Gmail |
+1. Clone this repository:
+   - `git clone https://github.com/fatemehkhoshbayan/responsive-web-components.git`
+2. Move into the project folder:
+   - `cd responsive-web-components`
+3. Open `index.html` in your browser.
 
----
+You can also run a simple local static server if you prefer.
 
-## Getting started
+## Notes
 
-1. **Live demo:** [https://fatemehkhoshbayan.github.io/responsive-web-components/](https://fatemehkhoshbayan.github.io/responsive-web-components/)
-2. Clone or download this repository.
-3. Open `index.html` in a modern browser, or serve the folder with any static file server.
-
----
-
-## Screenshots
-
-
----
+- Some project card images in `index.html` currently use placeholder screenshot URLs.
+- The footer copyright is set to `2026`.
 
 ## License
 
