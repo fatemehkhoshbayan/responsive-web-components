@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Fatemeh Khoshbayan</title>
+    <title>Fatemeh Khoshbayan | Full-Stack AI Engineer</title>
   </head>
   <body>
     <header>
       <h1>Fatemeh Khoshbayan</h1>
-      <nav>
+      <nav aria-label="Social media and contact links">
         <ul>
           <li>
             <a href="https://medium.com/@f.khoshbayan">
@@ -54,48 +54,84 @@
       </nav>
     </header>
     <main>
-      <section>
-        <h1>About Me</h1>
-        <figure class="about-me">
-          <img
-            src="media/fatemeh.JPG"
-            alt="Personal Image of Fatemeh Khoshbayan"
-            width="400"
-            height="auto"
-          />
-          <p>
-            Driven full-stack developer with a strong foundation in Python and a
-            deep enthusiasm for the transformative power of technology. My
-            recent experiences have focused on the dynamic world of modern web
-            development, where I've become highly proficient in React, Next.js,
-            and TypeScript, complementing my established back-end skills in
-            Python and Django. I love contributing to projects which will have a
-            positive and meaningful impact in the world and human life weather
-            in the health industry or backing. <br /><br />I thrive on the
-            challenges of bringing ideas to life, whether it's implementing
-            intuitive user interfaces from design specifications, seamlessly
-            integrating front-end and back-end systems, or optimizing back-end
-            processes. My background in consulting has cultivated my ability to
-            rapidly learn and apply new technologies across figureerse projects,
-            always striving for excellence and efficiency. <br /><br />I'm
-            particularly passionate about the potential of technology to improve
-            lives and connect people globally. I'm drawn to projects that push
-            the boundaries of what's possible and contribute to a more informed
-            and interconnected world. My proactive approach and dedication
-            ensure that I consistently deliver high-quality work, even when
-            navigating complex challenges and exploring uncharted technological
-            territory.<br /><br />
-            I'm eager to connect with fellow innovators, share insights, and
-            collaborate on initiatives that leverage technology for the
-            betterment of our world.
-          </p>
-        </figure>
+      <section id="about-me">
+        <div class="about-me">
+          <figure class="img-container">
+            <div class="img-wrapper">
+              <img
+                src="media/fatemeh.JPG"
+                alt="Personal Image of Fatemeh Khoshbayan"
+                width="400"
+                height="auto"
+              />
+            </div>
+            <figcaption class="top-skills">
+              Full-Stack / AI Engineer . Python . React . Next.js
+            </figcaption>
+          </figure>
+
+          <article class="about-me-container">
+            <h2>
+              Engineering purposeful web applications with an AI-first mindset.
+            </h2>
+            <p>
+              Impact-oriented Full-Stack / AI Software Engineer with a strong
+              sense of product ownership. I am a growth-minded professional who
+              pairs a high attention to detail with a passion for leveraging AI
+              to create technology that meaningfully improves human life.
+            </p>
+
+            <div class="skills-container">
+              <dl class="skills-box">
+                <dt class="title">Core Stack</dt>
+                <dd class="skills">TypeScript, React, Next.js, Python</dd>
+              </dl>
+              <dl class="skills-box">
+                <dt class="title">Specialization</dt>
+                <dd class="skills">AI & Web Integration</dd>
+              </dl>
+              <dl class="skills-box">
+                <dt class="title">Core Values</dt>
+                <dd class="skills">
+                  Product Ownership, Growth & AI Innovation
+                </dd>
+              </dl>
+            </div>
+
+            <div class="strength-container">
+              <section class="strength-box">
+                <h3>My Value</h3>
+                <p>
+                  I bring a blend of meticulous craftsmanship and a
+                  growth-oriented mindset to every project, taking full
+                  ownership from design to deployment. As a lifelong learner who
+                  thrives in "uncharted territory," I rapidly master new
+                  technologies while maintaining a disciplined focus on
+                  technical excellence. By balancing a hard-working drive with a
+                  keen eye for UI/UX, I ensure every application is both
+                  technically robust and intuitively powerful.
+                </p>
+              </section>
+              <section class="strength-box">
+                <h3>What Excites Me</h3>
+                <p>
+                  I am an eager learner deeply passionate about the evolution of
+                  AI. I actively explore and integrate the latest AI tools to
+                  push the boundaries of what is possible in software. I am
+                  particularly drawn to projects in the
+                  <strong>health and social impact sectors</strong> that use
+                  technology for the betterment of our world.
+                </p>
+              </section>
+            </div>
+          </article>
+        </div>
       </section>
 
-      <section>
-        <h1>My Projects</h1>
+      <section id="projects">
+        <h2>My Projects</h2>
         <div class="projects">
-          <article>
+          <article class="project-article">
             <figure class="project-image">
               <img
                 src="https://placehold.jp/30/1a2227/f1e9da/600x400.png?text=Project+Screenshot+Coming+Soon"
@@ -103,7 +139,7 @@
               />
               <figcaption class="category-badge">Web Design</figcaption>
             </figure>
-            <h2>Project 1</h2>
+            <h3>Project 1</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Repudiandae nisi necessitatibus provident perferendis ut
@@ -112,7 +148,8 @@
             </p>
             <button aria-label="View Project 1 details">View Project</button>
           </article>
-          <article>
+
+          <article class="project-article">
             <figure class="project-image">
               <img
                 src="https://placehold.jp/30/1a2227/f1e9da/600x400.png?text=Project+Screenshot+Coming+Soon"
@@ -120,7 +157,7 @@
               />
               <figcaption class="category-badge">Health</figcaption>
             </figure>
-            <h2>Project 2</h2>
+            <h3>Project 2</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Repudiandae nisi necessitatibus provident perferendis ut
@@ -129,7 +166,8 @@
             </p>
             <button aria-label="View Project 2 details">View Project</button>
           </article>
-          <article>
+
+          <article class="project-article">
             <figure class="project-image">
               <img
                 src="https://placehold.jp/30/1a2227/f1e9da/600x400.png?text=Project+Screenshot+Coming+Soon"
@@ -137,7 +175,7 @@
               />
               <figcaption class="category-badge">Education</figcaption>
             </figure>
-            <h2>Project 3</h2>
+            <h3>Project 3</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Repudiandae nisi necessitatibus provident perferendis ut
@@ -149,47 +187,61 @@
         </div>
       </section>
 
-      <section>
-        <h1>Contact Me</h1>
+      <section id="contact">
+        <h2>Contact Me</h2>
         <form>
-          <label for="name">Full Name:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            required
-            placeholder="John Smith"
-          />
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            placeholder="email@example.com"
-          />
-          <label for="subject">Subject:</label>
-          <select id="subject" name="subject" required>
-            <option value="" selected disabled class="title">
-              Select a reason for contacting
-            </option>
-            <option value="job-opportunity">Job Opportunity</option>
-            <option value="collaboration">Project Collaboration</option>
-            <option value="hire-me">Hire Me</option>
-            <option value="technical">Technical Question</option>
-            <option value="bug-report">Bug Report</option>
-            <option value="other">Other</option>
-          </select>
-          <label for="message">Your Message:</label>
-          <textarea type="textarea" id="message" name="message" required>
-Let me know what you think!</textarea
-          >
-          <button type="submit">Submit</button>
+          <fieldset>
+            <div class="form-group">
+              <label for="name">Full Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="John Smith"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="email@example.com"
+              />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject:</label>
+              <select id="subject" name="subject" required>
+                <option value="" selected disabled class="title">
+                  Select a reason for contacting
+                </option>
+                <option value="job-opportunity">Job Opportunity</option>
+                <option value="collaboration">Project Collaboration</option>
+                <option value="hire-me">Hire Me</option>
+                <option value="technical">Technical Question</option>
+                <option value="bug-report">Bug Report</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                placeholder="Let me know what you think!"
+              ></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </fieldset>
         </form>
       </section>
     </main>
     <footer>
-      <p>&copy; 2026 Fatemeh Khoshbayan</p>
+      <p>&copy; <time datetime="2026">2026</time> Fatemeh Khoshbayan</p>
     </footer>
   </body>
 </html>
