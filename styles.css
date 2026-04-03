@@ -174,7 +174,7 @@ img {
 
 .skills-container {
   display: grid;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .skills-box {
@@ -199,7 +199,7 @@ img {
 
 .strength-container {
   display: grid;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .strength-box {
@@ -277,15 +277,6 @@ fieldset {
   min-width: 0;
   background-color: #fff;
   box-shadow: 0 4px 14px rgba(26, 34, 39, 0.08);
-}
-
-legend {
-  border-radius: 2rem;
-  padding: 0.65rem 2rem;
-  font-weight: 600;
-  color: #f1e9da;
-  box-shadow: 0 2px 8px rgba(168, 168, 168, 0.45);
-  background-color: #1a2227;
 }
 
 .form-group {
@@ -391,6 +382,14 @@ textarea {
     gap: 1.5rem;
   }
 
+  .skills-container {
+    gap: 2rem;
+  }
+
+  .strength-container {
+    gap: 2rem;
+  }
+
   .project-article {
     gap: 3rem;
     padding: 2.5rem;
@@ -441,7 +440,7 @@ textarea {
 
   .skills-container {
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .strength-container {

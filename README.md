@@ -51,7 +51,6 @@ You can also run a simple local static server if you prefer.
 
 ![Home page screenshots](media/screenshot-1.png)
 ![Home page screenshots](media/screenshot-2.png)
-![Home page screenshots](media/screenshot-3.png)
 
 ## License
 
