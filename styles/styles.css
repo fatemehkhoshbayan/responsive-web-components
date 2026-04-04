@@ -140,6 +140,7 @@ img {
 
 .img-wrapper {
   max-width: 90%;
+  min-height: 520px;
   height: auto;
   display: flex;
   padding: 0.5rem;
@@ -260,21 +261,16 @@ button:hover {
 
 form {
   width: 100%;
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 fieldset {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1.5rem;
   border: none;
-  border-radius: 0.75rem;
-  padding: 1.75rem;
+  border-radius: 1rem;
+  padding: 2rem;
   width: 100%;
-  max-width: 100%;
-  min-width: 0;
   background-color: #fff;
   box-shadow: 0 4px 14px rgba(26, 34, 39, 0.08);
 }
@@ -282,41 +278,12 @@ fieldset {
 .form-group {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  align-self: stretch;
   width: 100%;
-  padding: 0;
-  gap: 0.4rem;
-}
-
-h2 {
-  align-self: center;
-  text-align: center;
-}
-
-input,
-select,
-textarea {
-  width: 100%;
-  max-width: 100%;
-  min-width: 0;
-}
-
-input,
-select {
-  height: auto;
-  min-height: 2.75rem;
-}
-
-textarea {
-  resize: vertical;
-  min-height: 10rem;
-  line-height: 1.5;
+  gap: 1rem;
 }
 
 button[type="submit"] {
   width: fit-content;
-  margin-top: 0.25rem;
   padding: 1rem 3rem;
   cursor: pointer;
 }
@@ -327,27 +294,22 @@ input {
   height: 2rem;
   font-size: large;
   padding: 1rem;
-}
-
-input:focus,
-textarea:focus,
-select:focus {
-  border: 3px solid #306844;
-  outline: none;
+  min-height: 2.75rem;
+  width: 100%;
 }
 
 select {
-  border-color: #1a2227;
-  color: #1a2227;
+  border:1px solid #1a2227;
   border-radius: 4px;
-  border-width: 1px;
-  height: auto;
   font-size: medium;
   padding: 0.5rem 1rem;
+  min-height: 2.75rem;
+  width: 100%;
 }
 
 option {
   color: #1a2227;
+  background-color: #fff;
   gap: 1rem;
   padding: 1rem;
 }
@@ -358,6 +320,13 @@ textarea {
   font-size: large;
   padding: 1rem;
   min-height: 200px;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border: 3px solid #306844;
 }
 
 /* Tablet */
