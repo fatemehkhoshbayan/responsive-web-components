@@ -1,0 +1,47 @@
+export const projectsData = [
+  {
+    title: "Aurora Studio Portfolio",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nisi necessitatibus provident perferendis ut laudantium harum suscipit doloremque, sunt officiis ab dicta excepturi ratione nesciunt facere omnis optio! Fuga, unde?",
+    imageAlt: "Aurora Studio Portfolio screenshot",
+    imageSrc: "https://placehold.jp/30/1a2227/f1e9da/600x400.png?text=Project+Screenshot+Coming+Soon",
+    link: "",
+    tags: "Web Design",
+  },
+  {
+    title: "CarePulse Patient Portal",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nisi necessitatibus provident perferendis ut laudantium harum suscipit doloremque, sunt officiis ab dicta excepturi ratione nesciunt facere omnis optio! Fuga, unde?",
+    imageAlt: "CarePulse Patient Portal screenshot",
+    imageSrc: "https://placehold.jp/30/1a2227/f1e9da/600x400.png?text=Project+Screenshot+Coming+Soon",
+    link: "",
+    tags: "Health",
+  },
+  {
+    title: "TabZen Focus Extension",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nisi necessitatibus provident perferendis ut laudantium harum suscipit doloremque, sunt officiis ab dicta excepturi ratione nesciunt facere omnis optio! Fuga, unde?",
+    imageAlt: "TabZen Focus Extension screenshot",
+    imageSrc: "https://placehold.jp/30/1a2227/f1e9da/600x400.png?text=Project+Screenshot+Coming+Soon",
+    link: "",
+    tags: "Extension",
+  },
+  {
+    title: "CourseCraft Learning Hub",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nisi necessitatibus provident perferendis ut laudantium harum suscipit doloremque, sunt officiis ab dicta excepturi ratione nesciunt facere omnis optio! Fuga, unde?",
+    imageAlt: "CourseCraft Learning Hub screenshot",
+    imageSrc: "https://placehold.jp/30/1a2227/f1e9da/600x400.png?text=Project+Screenshot+Coming+Soon",
+    link: "",
+    tags: "Education",
+  },
+  {
+    title: "Northwind Shop Front",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nisi necessitatibus provident perferendis ut laudantium harum suscipit doloremque, sunt officiis ab dicta excepturi ratione nesciunt facere omnis optio! Fuga, unde?",
+    imageAlt: "Northwind Shop Front screenshot", 
+    imageSrc: "https://placehold.jp/30/1a2227/f1e9da/600x400.png?text=Project+Screenshot+Coming+Soon",
+    link: "",
+    tags: "Web Design",
+  },
+];

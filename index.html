@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <title>Fatemeh Khoshbayan | Full-Stack AI Engineer</title>
   </head>
   <body>
@@ -60,6 +60,7 @@
             <div class="img-wrapper">
               <img
                 src="media/fatemeh.JPG"
+                loading="lazy"
                 alt="Personal Image of Fatemeh Khoshbayan"
                 width="400"
                 height="auto"
@@ -129,62 +130,33 @@
       </section>
 
       <section id="projects">
-        <h2>My Projects</h2>
-        <div class="projects">
-          <article class="project-article">
-            <figure class="project-image">
-              <img
-                src="https://placehold.jp/30/1a2227/f1e9da/600x400.png?text=Project+Screenshot+Coming+Soon"
-                alt="Project 1 Screenshot"
+        <div class="projects-header">
+          <h2>My Projects</h2>
+          <div class="search-field">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="search-icon"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
               />
-              <figcaption class="category-badge">Web Design</figcaption>
-            </figure>
-            <h3>Project 1</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Repudiandae nisi necessitatibus provident perferendis ut
-              laudantium harum suscipit doloremque, sunt officiis ab dicta
-              excepturi ratione nesciunt facere omnis optio! Fuga, unde?
-            </p>
-            <button aria-label="View Project 1 details">View Project</button>
-          </article>
-
-          <article class="project-article">
-            <figure class="project-image">
-              <img
-                src="https://placehold.jp/30/1a2227/f1e9da/600x400.png?text=Project+Screenshot+Coming+Soon"
-                alt="Project 2 Screenshot"
-              />
-              <figcaption class="category-badge">Health</figcaption>
-            </figure>
-            <h3>Project 2</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Repudiandae nisi necessitatibus provident perferendis ut
-              laudantium harum suscipit doloremque, sunt officiis ab dicta
-              excepturi ratione nesciunt facere omnis optio! Fuga, unde?
-            </p>
-            <button aria-label="View Project 2 details">View Project</button>
-          </article>
-
-          <article class="project-article">
-            <figure class="project-image">
-              <img
-                src="https://placehold.jp/30/1a2227/f1e9da/600x400.png?text=Project+Screenshot+Coming+Soon"
-                alt="Project 3 Screenshot"
-              />
-              <figcaption class="category-badge">Education</figcaption>
-            </figure>
-            <h3>Project 3</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Repudiandae nisi necessitatibus provident perferendis ut
-              laudantium harum suscipit doloremque, sunt officiis ab dicta
-              excepturi ratione nesciunt facere omnis optio! Fuga, unde?
-            </p>
-            <button aria-label="View Project 3 details">View Project</button>
-          </article>
+            </svg>
+            <input
+              type="search"
+              id="search"
+              placeholder="Search projects ..."
+              class="search-input"
+            />
+          </div>
         </div>
+        <div class="projects"></div>
       </section>
 
       <section id="contact">
@@ -215,7 +187,7 @@
             <div class="form-group">
               <label for="subject">Subject:</label>
               <select id="subject" name="subject" required>
-                <option value="" selected disabled class="title">
+                <option value="" selected disabled>
                   Select a reason for contacting
                 </option>
                 <option value="job-opportunity">Job Opportunity</option>
@@ -240,8 +212,11 @@
         </form>
       </section>
     </main>
+
     <footer>
       <p>&copy; <time datetime="2026">2026</time> Fatemeh Khoshbayan</p>
     </footer>
+
+    <script type="module" src="scripts/main.js"></script>
   </body>
 </html>
