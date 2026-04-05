@@ -221,6 +221,26 @@ img {
   gap: 3rem;
 }
 
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 1rem;
+  width: 100%;
+  padding: 10rem;
+  color: grey;
+  font-size: x-large;
+  box-shadow: 0 3px 3px rgba(168, 168, 168, 0.8);
+}
+
+.empty-box {
+  width: 5rem;
+  height: 5rem;
+}
+
 button {
   background-color: #1a2227;
   border: 1px solid #1a2227;
@@ -299,19 +319,31 @@ input {
 }
 
 select {
-  border:1px solid #1a2227;
+  border: 1px solid #1a2227;
   border-radius: 4px;
   font-size: medium;
   padding: 0.5rem 1rem;
   min-height: 2.75rem;
   width: 100%;
+  color: #1a2227;
+  background-color: #fff;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%231a2227' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  background-position: right 1rem center;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select:invalid {
+  color: #757575;
 }
 
 option {
   color: #1a2227;
-  background-color: #fff;
-  gap: 1rem;
-  padding: 1rem;
 }
 
 textarea {
@@ -326,7 +358,39 @@ textarea {
 input:focus,
 textarea:focus,
 select:focus {
-  border: 3px solid #306844;
+  outline: 2px solid #306844;
+}
+
+.projects-header {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  width: 100%;
+}
+
+.search-field {
+  position: relative;
+  width: 50%;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  color: grey;
+  pointer-events: none;
+}
+
+.search-input {
+  padding-left: 3rem;
+  border: none;
+  box-shadow: 0 4px 14px rgba(26, 34, 39, 0.1);
+  width: 100%;
+  height: auto;
 }
 
 /* Tablet */

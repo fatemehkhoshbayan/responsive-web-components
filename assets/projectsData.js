@@ -1,45 +1,45 @@
 export const projectsData = [
   {
-    title: "Project 1",
+    title: "Aurora Studio Portfolio",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nisi necessitatibus provident perferendis ut laudantium harum suscipit doloremque, sunt officiis ab dicta excepturi ratione nesciunt facere omnis optio! Fuga, unde?",
-    imageAlt: "Project 1 Screenshot",
+    imageAlt: "Aurora Studio Portfolio screenshot",
     imageSrc: "https://placehold.jp/30/1a2227/f1e9da/600x400.png?text=Project+Screenshot+Coming+Soon",
     link: "",
     tags: "Web Design",
   },
   {
-    title: "Project 2",
+    title: "CarePulse Patient Portal",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nisi necessitatibus provident perferendis ut laudantium harum suscipit doloremque, sunt officiis ab dicta excepturi ratione nesciunt facere omnis optio! Fuga, unde?",
-    imageAlt: "Project 2 Screenshot",
+    imageAlt: "CarePulse Patient Portal screenshot",
     imageSrc: "https://placehold.jp/30/1a2227/f1e9da/600x400.png?text=Project+Screenshot+Coming+Soon",
     link: "",
     tags: "Health",
   },
   {
-    title: "Project 3",
+    title: "TabZen Focus Extension",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nisi necessitatibus provident perferendis ut laudantium harum suscipit doloremque, sunt officiis ab dicta excepturi ratione nesciunt facere omnis optio! Fuga, unde?",
-    imageAlt: "Project 3 Screenshot",
+    imageAlt: "TabZen Focus Extension screenshot",
     imageSrc: "https://placehold.jp/30/1a2227/f1e9da/600x400.png?text=Project+Screenshot+Coming+Soon",
     link: "",
     tags: "Extension",
   },
   {
-    title: "Project 4",
+    title: "CourseCraft Learning Hub",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nisi necessitatibus provident perferendis ut laudantium harum suscipit doloremque, sunt officiis ab dicta excepturi ratione nesciunt facere omnis optio! Fuga, unde?",
-    imageAlt: "Project 4 Screenshot",
+    imageAlt: "CourseCraft Learning Hub screenshot",
     imageSrc: "https://placehold.jp/30/1a2227/f1e9da/600x400.png?text=Project+Screenshot+Coming+Soon",
     link: "",
     tags: "Education",
   },
   {
-    title: "Project 5",
+    title: "Northwind Shop Front",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nisi necessitatibus provident perferendis ut laudantium harum suscipit doloremque, sunt officiis ab dicta excepturi ratione nesciunt facere omnis optio! Fuga, unde?",
-    imageAlt: "Project 5 Screenshot", 
+    imageAlt: "Northwind Shop Front screenshot", 
     imageSrc: "https://placehold.jp/30/1a2227/f1e9da/600x400.png?text=Project+Screenshot+Coming+Soon",
     link: "",
     tags: "Web Design",

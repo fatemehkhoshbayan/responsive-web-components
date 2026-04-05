@@ -130,8 +130,32 @@
       </section>
 
       <section id="projects">
-        <h2>My Projects</h2>
-        
+        <div class="projects-header">
+          <h2>My Projects</h2>
+          <div class="search-field">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="search-icon"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+            </svg>
+            <input
+              type="search"
+              id="search"
+              placeholder="Search projects ..."
+              class="search-input"
+            />
+          </div>
+        </div>
         <div class="projects"></div>
       </section>
 
@@ -163,7 +187,7 @@
             <div class="form-group">
               <label for="subject">Subject:</label>
               <select id="subject" name="subject" required>
-                <option value="" selected disabled class="title">
+                <option value="" selected disabled>
                   Select a reason for contacting
                 </option>
                 <option value="job-opportunity">Job Opportunity</option>
