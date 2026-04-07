@@ -1,27 +1,33 @@
-import { projectsData } from "../assets/projectsData.js";
+import { getProjectsData } from "./apis/projects.js";
 
 /* Elements */
 const projectSection = document.querySelector("section#projects .projects");
 const searchInput = document.querySelector(".search-field .search-input");
 
+function createProjectCard(project) {
+  const article = document.createElement("article");
+  article.className = "project-article";
+
+  article.innerHTML = `
+    <figure class="project-image">
+      <img src="${project.imageSrc}" alt="${project.imageAlt}" />
+      <figcaption class="category-badge">${project.tags}</figcaption>
+    </figure>
+    <h3>${project.title}</h3>
+    <p>${project.description}</p>
+    <button aria-label="View ${project.title} details">View Project</button>
+  `;
+
+  return article;
+}
+
 function renderProjects(container, projects, searchQuery = "") {
   if (projects && projects.length > 0) {
-    const projectCards = projects.map((project) => {
-      return `
-            <article class="project-article">
-              <figure class="project-image">
-                <img src="${project.imageSrc}" alt="${project.imageAlt}" />
-                <figcaption class="category-badge">${project.tags}</figcaption>
-              </figure>
-              <h3>${project.title}</h3>
-              <p>${project.description}</p>
-              <button aria-label="View ${project.title} details">View Project</button>
-            </article>
-          `;
-    });
-
     container.classList.remove("empty-state");
-    container.innerHTML = projectCards.join("");
+    container.innerHTML = "";
+    projects.forEach((project) => {
+      container.appendChild(createProjectCard(project));
+    });
   } else {
     const emptyState = `
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="empty-box">
@@ -34,6 +40,8 @@ function renderProjects(container, projects, searchQuery = "") {
     container.innerHTML = emptyState;
   }
 }
+
+const projectsData = await getProjectsData();
 
 searchInput.addEventListener("input", (e) => {
   const searchQuery = e.target.value.toLowerCase();
